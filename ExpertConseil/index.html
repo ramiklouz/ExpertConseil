@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ExpertConseil - Find your expert advisor</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+
+    <!-- icone su site -->
+    <link rel="icon" type="image/x-icon" href="img/online.PNG">
+   
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Styleshet -->
+    <script src="https://kit.fontawesome.com/8dc6793433.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!--  Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-xxl bg-white p-0">
+ 
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/online.PNG" alt="Icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <h1 style="color: rgb(120, 149, 178); font-family: 'Unbounded', cursive;" >ExpertConseil</h1>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Acceuil</a>
+                        <a href="" class="nav-item nav-link">A Propos </a>
+                        <!--Dropdown Nav -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Type de domaine</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="" class="dropdown-item">Medical</a>
+                                <a href="" class="dropdown-item">sportif</a>
+                                <a href="" class="dropdown-item">education</a>
+                                <a href="" class="dropdown-item">juridique</a>
+                            </div>
+                        </div>
+                
+                        <a href="#contact" class="nav-item nav-link">Contactez-nous</a>
+                    </div>
+                    <a href="" style="background-color: rgb(120, 149, 178);color: rgb(255, 255, 255);" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">S'identifier</a>
+                </div>
+            </nav>
+        </div>
+
+            <!-----Modal----->
+            <!-- Login -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form action="">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Se Connecter</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="email">E-mail<span class="text-danger">*</span></label>
+                                <input type="text" name="email" class="form-control" id="email1" placeholder="Entrer votre email">
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="Password">Mot de Passe<span class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control" id="Password" placeholder="Entrer votre mot de passe">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                                <label class="form-check-label" for="remember">se souvenir de moi</label>
+                                <a  style="color: rgb(83, 128, 173);" href="#" class="float-end">Mot de Passe oublié</a>
+                            </div>
+                          </div>
+                          <div class="modal-footer pt-4">                  
+                            <button type="button" class="btn btn-primary mx-auto w-100" >Login</button>
+                          </div>
+                          <p class="text-center">Pas de Compte? <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" style="color: rgb(83, 128, 173);" href="#">S'enregistrer</a></p> 
+                      </form>
+                    </div>
+                </div>
+          </div>
+
+           <!--SIGN UP-->
+           <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">S'enregistrer</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="Username">Nom d'utilisateur<span class="text-danger">*</span></label>
+                    <input type="text" name="username" class="form-control" id="Username">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Username">Prenom d'utilisateur<span class="text-danger">*</span></label>
+                    <input type="text" name="username" class="form-control" id="Username">
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="Password">Mot de Passe<span class="text-danger">*</span></label>
+                    <input type="password" name="password" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email">E-mail<span class="text-danger">*</span></label>
+                    <input type="email" name="email" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="registration">S'inscrire en tant que:<span class="text-danger">*</span></label>
+          
+                    <div class="btn-group" role="group" aria-label="Registration Options">
+                      <input type="radio" class="btn-check" name="registration" id="visitor" autocomplete="off" checked>
+                      <label class="btn btn-primary" for="visitor">Visiteur</label>
+          
+                      <input type="radio" class="btn-check" name="registration" id="expert" autocomplete="off">
+                      <label class="btn btn-primary" for="expert">Expert</label>
+                    </div>
+                  </div>
+          
+                </div>
+                <div class="modal-footer pt-4">
+                  <button type="button" class="btn btn-primary mx-auto w-100" onclick="submitForm()">S'enregistrer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal fade" id="visitorForm" aria-hidden="true" aria-labelledby="visitorFormLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">S'enregistrer en tant que visiteur</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                  <div class="mb-3">
+                    <label for="cin">CIN (Carte d'identité nationale)<span class="text-danger">*</span></label>
+                    <input type="text" name="cin" class="form-control" id="cin">
+                  </div>
+                  <div class="mb-3">
+                    <label for="photo">Ajouter votre Photo<span class="text-danger">*</span></label>
+                    <input type="file" name="photo" class="form-control" id="photo">
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary" onclick="goToRegistrationForm()">Retourner</button>
+                    <button type="button" class="btn btn-primary">S'enregistrer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal fade" id="expertForm" aria-hidden="true" aria-labelledby="expertFormLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">S'enregistrer en tant qu'expert</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="cin">CIN (Carte d'identité nationale)<span class="text-danger">*</span></label>
+                        <input type="text" name="cin" class="form-control" id="cin">
+                      </div>
+                      <div class="mb-3">
+                        <label for="photo">Photo<span class="text-danger">*</span></label>
+                        <input type="file" name="photo" class="form-control" id="photo">
+                      </div>
+                      <div class="mb-3">
+                        <label for="domains">Domains<span class="text-danger">*</span></label>
+                        <input type="text" name="domains" class="form-control" id="domains">
+                      </div>
+                      <div class="mb-3">
+                        <label for="specialite">Spécialité<span class="text-danger">*</span></label>
+                        <input type="text" name="specialite" class="form-control" id="specialite">
+                      </div>
+          
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary" onclick="goToRegistrationForm()">Retourner</button>
+                    <button type="button" class="btn btn-primary" onclick="goToDiplomaForm()">suivant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="diplomaForm" aria-hidden="true" aria-labelledby="diplomaFormLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ajouter vos diplômes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="diplomaFiles">Diplômes<span class="text-danger">*</span></label>
+                    <input type="file" name="diplomaFiles" class="form-control" id="diplomaFiles" multiple>
+                  </div>
+          
+                  <!-- Other fields for diploma upload -->
+          
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary" onclick="goToVisitorForm()">Retourner</button>
+                    <button type="button" class="btn btn-primary">Envoyer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+        <!--Fin Modal-->
+    <!-- Navbar End -->
+
+
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                  <h1 style="font-family: 'Unbounded', cursive;" class="display-5 animated fadeIn mb-4">
+                        Trouver votre <span style="color: rgb(120, 149, 178);">conseiller expert</span> à votre domicile.</h1>
+                    <p style="font-size: large;" class=" mb-4 pb-2">
+                        Trouvez votre conseiller expert.</p>
+                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Commencez</a>
+                </div>
+
+                <!--Carousel-->
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/doctor1.png" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/coach.png" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/lawyer.png" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/nutritionniste.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Search Start -->
+        <div class=" search container-fluid  mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+               <div class="row g-2">
+                 <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="mot clé">
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>domaine d'Expert</option>
+                                    <option value="1">domaine 1</option>
+                                    <option value="2">domaine 2</option>
+                                    <option value="3">domaine 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Specialite</option>
+                                    <option value="1">Specialite 1</option>
+                                    <option value="2">Specialite 2</option>
+                                    <option value="3">Specialite 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3">Chercher votre expert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Search -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 style="font-family: 'Unbounded', cursive;" class="mb-3">Découvrez tous nos Expert</h1>
+                    <p>Quel est votre besoin ? ExpertConseil vous propose de trouver expert parmi de nombreuses domaine mises à votre disposition a tous vos besoin</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/doctor1.png" alt="Icon">
+                                </div>
+                                <h6>médecin</h6>
+                                <span style="color: #AEBDCA;">6 disponible</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/coach.png" alt="Icon">
+                                </div>
+                                <h6>entraîneur</h6>
+                                <span style="color: #AEBDCA;">10 disponible</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/lawyer.png" alt="Icon">
+                                </div>
+                                <h6>Avocat</h6>
+                                <span style="color: #AEBDCA;">2 disponible</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/nutritionniste2.jpg" alt="Icon">
+                                </div>
+                                <h6>nutritionniste</h6>
+                                <span style="color: #AEBDCA;">3 disponible</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/teacher.PNG" alt="Icon">
+                                </div>
+                                <h6>professeure</h6>
+                                <span style="color: #AEBDCA;">3 disponible</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+        <!-- A propos Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/nutri2.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 style="font-family: 'Unbounded', cursive; font-size:xx-large;" class="mb-4">Notre meilleure Consultan du mois:La nutritionniste serra</h1>
+                        <p class="mb-4">  C'est serra l'une de nos meilleures nutritionnistes, diplômée de l'université de harvard, elle est là pour vous aider lors de vos consultations et vous guider à avoir une santé saine</p>
+                        <p><i style="color: #d3c4a2;"  class="fa fa-check  me-3"></i>Choix alimentaires sains</p>
+                        <p><i style="color: #d3c4a2;" class="fa fa-check  me-3"></i> Régime bien déterminé</p>
+                        <p><i style="color: #d3c4a2;" class="fa fa-check  me-3"></i>Gérer une maladie chronique</p>
+                        <p><i style="color: #d3c4a2;" class="fa fa-check  me-3"></i>Rendre votre mode de vie et vos habitudes alimentaires plus sains.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- A propos End -->
+
+
+        <!-- Les bons plans -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 style="font-family: 'Unbounded', cursive;" class="mb-3">Nos expert</h1>
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a  class="btn BP " data-bs-toggle="pill" href="#tab-1">Mieux notés</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a  class="btn BP" data-bs-toggle="pill" href="#tab-2">Disponible</a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn BP " data-bs-toggle="pill" href="#tab-3">Par domaine</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <!------ Liste des plans ----->
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/nutri2.png" alt=""></a>
+                                        <div  style="color: #b9af95;" class="bg-white rounded-top  position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Chalet</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 style="color: #b9af95;" class=" mb-3">$50 par consultations</h5>
+                                        <a class="d-block h5 mb-2" href=""> la nutritionniste serra </a>
+                                        <p><i style="color: #b9af95;"  class="fas fa-toggle-on"></i>disponible du lundi aux vendredi de 13h a 17h</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small style="color: #b9af95;" class="flex-fill text-center border-end py-2"><i class="fas fa-users"></i>plus de 10 clients</small>
+                                        <small style="color: #b9af95;" class="flex-fill text-center border-end py-2"><i class="fa-solid fa-circle fa-spin" style="color: #1aad32;"></i>Disponible </small>
+                                        <small  style="color: #b9af95;" class="flex-fill text-center py-2"> <i class="fa-solid fa-star fa-spin"></i>4,6/5 </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="btn btn-primary py-3 px-5" href="">Tous nos conseillers</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Les Bons plans End -->
+
+
+
+        <!-- Contact -->
+        <div id="contact" class=" container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(28, 0, 185, 0.3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 style="font-family: 'Unbounded', cursive;" class="mb-3">Contactez services Client</h1>
+                                </div>
+
+                                <div class="row g-2">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">Vote Nom</label>
+                                          </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">Votre E-mail</label>
+                                          </div>
+                                    </div>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Votre Message </label>
+                                    </div>
+                                    <div class="row g-2"> <a href="" class="btn btn-dark py-3 px-4">Envoyer mon message</a></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact End -->
+
+        
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 style="font-family: 'Unbounded', cursive;" class="mb-3">services Client</h1>
+                    <p>...............</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 style="font-family: 'Unbounded', cursive;" class="mb-3">Les avis de nos clients !</h1>
+                    <p>.............</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p> Merci beaucoup, serra est la meilleure j'ai suivi son régime alimentaire et je suis très satisfaite j'ai perdu beaucoup de ki-lots au moins de 3 mois je la recommande à toutes les personnes intersse à perdre du poids</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/regim.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">mariam </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>wow</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Client Name</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>wow</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Client Name</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Si vous avez des questions</h5>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 96 170 989</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Ramiklouz@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Liens rapides</h5>
+                        <a class="btn btn-link text-white-50" href="">A propos de nous</a>
+                        <a class="btn btn-link text-white-50" href="">Contactez-nous</a>
+                        <a class="btn btn-link text-white-50" href="">Nos Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Gallerie de photo</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Abonnez vous à notre newsletter</h5>
+                        <div class="position-relative mx-auto" style="max-width: 700px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">s'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">ExpertConseil</a>, All Right Reserved. 
+							
+
+							Designed By <a class="border-bottom" href="">Rami & Bilel </a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Acceuil</a>
+                                <a href="">Cookies</a>
+                                <a href="">Aide</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Footer  -->
+
+
+        <!-- Back to Top button  -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
